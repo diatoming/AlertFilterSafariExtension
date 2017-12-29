@@ -10,7 +10,38 @@
 		1F9826701FEA9DCC00DF5BBC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F98266F1FEA9DCC00DF5BBC /* AppDelegate.swift */; };
 		1F9826721FEA9DCC00DF5BBC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F9826711FEA9DCC00DF5BBC /* Assets.xcassets */; };
 		1F9826751FEA9DCC00DF5BBC /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F9826731FEA9DCC00DF5BBC /* MainMenu.xib */; };
+		1F9826841FEA9DD500DF5BBC /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F9826831FEA9DD500DF5BBC /* Cocoa.framework */; };
+		1F9826871FEA9DD500DF5BBC /* SafariExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9826861FEA9DD500DF5BBC /* SafariExtensionHandler.swift */; };
+		1F9826891FEA9DD500DF5BBC /* SafariExtensionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9826881FEA9DD500DF5BBC /* SafariExtensionViewController.swift */; };
+		1F98268C1FEA9DD500DF5BBC /* SafariExtensionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F98268A1FEA9DD500DF5BBC /* SafariExtensionViewController.xib */; };
+		1F98268F1FEA9DD500DF5BBC /* script.js in Resources */ = {isa = PBXBuildFile; fileRef = 1F98268E1FEA9DD500DF5BBC /* script.js */; };
+		1F9826911FEA9DD500DF5BBC /* ToolbarItemIcon.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1F9826901FEA9DD500DF5BBC /* ToolbarItemIcon.pdf */; };
+		1F9826951FEA9DD500DF5BBC /* AlertFilter.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 1F9826811FEA9DD500DF5BBC /* AlertFilter.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1F9826931FEA9DD500DF5BBC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F9826641FEA9DCC00DF5BBC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1F9826801FEA9DD500DF5BBC;
+			remoteInfo = AlertFilter;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1F9826991FEA9DD500DF5BBC /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				1F9826951FEA9DD500DF5BBC /* AlertFilter.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		1F98266C1FEA9DCC00DF5BBC /* AlertFilterSafariExtension.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlertFilterSafariExtension.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -19,6 +50,15 @@
 		1F9826741FEA9DCC00DF5BBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		1F9826761FEA9DCC00DF5BBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1F9826771FEA9DCC00DF5BBC /* AlertFilterSafariExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AlertFilterSafariExtension.entitlements; sourceTree = "<group>"; };
+		1F9826811FEA9DD500DF5BBC /* AlertFilter.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = AlertFilter.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F9826831FEA9DD500DF5BBC /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		1F9826861FEA9DD500DF5BBC /* SafariExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariExtensionHandler.swift; sourceTree = "<group>"; };
+		1F9826881FEA9DD500DF5BBC /* SafariExtensionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariExtensionViewController.swift; sourceTree = "<group>"; };
+		1F98268B1FEA9DD500DF5BBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/SafariExtensionViewController.xib; sourceTree = "<group>"; };
+		1F98268D1FEA9DD500DF5BBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F98268E1FEA9DD500DF5BBC /* script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = script.js; sourceTree = "<group>"; };
+		1F9826901FEA9DD500DF5BBC /* ToolbarItemIcon.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = ToolbarItemIcon.pdf; sourceTree = "<group>"; };
+		1F9826921FEA9DD500DF5BBC /* AlertFilter.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AlertFilter.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +69,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1F98267E1FEA9DD500DF5BBC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F9826841FEA9DD500DF5BBC /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -36,6 +84,8 @@
 			isa = PBXGroup;
 			children = (
 				1F98266E1FEA9DCC00DF5BBC /* AlertFilterSafariExtension */,
+				1F9826851FEA9DD500DF5BBC /* AlertFilter */,
+				1F9826821FEA9DD500DF5BBC /* Frameworks */,
 				1F98266D1FEA9DCC00DF5BBC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -44,6 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				1F98266C1FEA9DCC00DF5BBC /* AlertFilterSafariExtension.app */,
+				1F9826811FEA9DD500DF5BBC /* AlertFilter.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -60,6 +111,28 @@
 			path = AlertFilterSafariExtension;
 			sourceTree = "<group>";
 		};
+		1F9826821FEA9DD500DF5BBC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1F9826831FEA9DD500DF5BBC /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1F9826851FEA9DD500DF5BBC /* AlertFilter */ = {
+			isa = PBXGroup;
+			children = (
+				1F9826861FEA9DD500DF5BBC /* SafariExtensionHandler.swift */,
+				1F9826881FEA9DD500DF5BBC /* SafariExtensionViewController.swift */,
+				1F98268A1FEA9DD500DF5BBC /* SafariExtensionViewController.xib */,
+				1F98268D1FEA9DD500DF5BBC /* Info.plist */,
+				1F98268E1FEA9DD500DF5BBC /* script.js */,
+				1F9826901FEA9DD500DF5BBC /* ToolbarItemIcon.pdf */,
+				1F9826921FEA9DD500DF5BBC /* AlertFilter.entitlements */,
+			);
+			path = AlertFilter;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -70,15 +143,34 @@
 				1F9826681FEA9DCC00DF5BBC /* Sources */,
 				1F9826691FEA9DCC00DF5BBC /* Frameworks */,
 				1F98266A1FEA9DCC00DF5BBC /* Resources */,
+				1F9826991FEA9DD500DF5BBC /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				1F9826941FEA9DD500DF5BBC /* PBXTargetDependency */,
 			);
 			name = AlertFilterSafariExtension;
 			productName = AlertFilterSafariExtension;
 			productReference = 1F98266C1FEA9DCC00DF5BBC /* AlertFilterSafariExtension.app */;
 			productType = "com.apple.product-type.application";
+		};
+		1F9826801FEA9DD500DF5BBC /* AlertFilter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F9826961FEA9DD500DF5BBC /* Build configuration list for PBXNativeTarget "AlertFilter" */;
+			buildPhases = (
+				1F98267D1FEA9DD500DF5BBC /* Sources */,
+				1F98267E1FEA9DD500DF5BBC /* Frameworks */,
+				1F98267F1FEA9DD500DF5BBC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AlertFilter;
+			productName = AlertFilter;
+			productReference = 1F9826811FEA9DD500DF5BBC /* AlertFilter.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -91,6 +183,10 @@
 				ORGANIZATIONNAME = diatoming.com;
 				TargetAttributes = {
 					1F98266B1FEA9DCC00DF5BBC = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					1F9826801FEA9DD500DF5BBC = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
 					};
@@ -110,6 +206,7 @@
 			projectRoot = "";
 			targets = (
 				1F98266B1FEA9DCC00DF5BBC /* AlertFilterSafariExtension */,
+				1F9826801FEA9DD500DF5BBC /* AlertFilter */,
 			);
 		};
 /* End PBXProject section */
@@ -124,6 +221,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1F98267F1FEA9DD500DF5BBC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F9826911FEA9DD500DF5BBC /* ToolbarItemIcon.pdf in Resources */,
+				1F98268C1FEA9DD500DF5BBC /* SafariExtensionViewController.xib in Resources */,
+				1F98268F1FEA9DD500DF5BBC /* script.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -135,7 +242,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1F98267D1FEA9DD500DF5BBC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F9826891FEA9DD500DF5BBC /* SafariExtensionViewController.swift in Sources */,
+				1F9826871FEA9DD500DF5BBC /* SafariExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1F9826941FEA9DD500DF5BBC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1F9826801FEA9DD500DF5BBC /* AlertFilter */;
+			targetProxy = 1F9826931FEA9DD500DF5BBC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		1F9826731FEA9DCC00DF5BBC /* MainMenu.xib */ = {
@@ -144,6 +268,14 @@
 				1F9826741FEA9DCC00DF5BBC /* Base */,
 			);
 			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		1F98268A1FEA9DD500DF5BBC /* SafariExtensionViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1F98268B1FEA9DD500DF5BBC /* Base */,
+			);
+			name = SafariExtensionViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -258,6 +390,7 @@
 		1F98267B1FEA9DCC00DF5BBC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = AlertFilterSafariExtension/AlertFilterSafariExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
@@ -273,6 +406,7 @@
 		1F98267C1FEA9DCC00DF5BBC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = AlertFilterSafariExtension/AlertFilterSafariExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
@@ -281,6 +415,34 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = diatoming.com.AlertFilterSafariExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		1F9826971FEA9DD500DF5BBC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = AlertFilter/AlertFilter.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AlertFilter/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = diatoming.com.AlertFilterSafariExtension.AlertFilter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		1F9826981FEA9DD500DF5BBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = AlertFilter/AlertFilter.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AlertFilter/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = diatoming.com.AlertFilterSafariExtension.AlertFilter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
@@ -302,6 +464,15 @@
 			buildConfigurations = (
 				1F98267B1FEA9DCC00DF5BBC /* Debug */,
 				1F98267C1FEA9DCC00DF5BBC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1F9826961FEA9DD500DF5BBC /* Build configuration list for PBXNativeTarget "AlertFilter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F9826971FEA9DD500DF5BBC /* Debug */,
+				1F9826981FEA9DD500DF5BBC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
