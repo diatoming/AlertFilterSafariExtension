@@ -13,7 +13,7 @@ https://developer.apple.com/library/content/documentation/NetworkingInternetWeb/
 ## Usage
 Click the AlertFilter button on Safari toolbar, you could add a custom scheme by clicking the plus button. Then reload current opened pages to apply the configuration change.
 
-![](https://github.com/diatoming/AlertFilterSafariExtension/blob/master/Screen%20Shot.png")
+![](https://github.com/diatoming/AlertFilterSafariExtension/blob/master/Screen%20Shot.png)
 
 > For example, if you have Github Desktop app installed on your Mac, and add the scheme "github-mac" to the Scheme List.
 > When you click the button "Open in Desktop" to clone a repository via the app, AlertFilter will handle the click and filter out the Safari security alert. The Github Desktop will opened directly without the alert popup.
