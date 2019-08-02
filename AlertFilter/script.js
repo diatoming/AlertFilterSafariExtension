@@ -1,28 +1,32 @@
 // Wait for the DOM to load before dispatching a message to the app extension's Swift code.
 document.addEventListener("DOMContentLoaded", function(event) {
-                          safari.extension.dispatchMessage("docLoaded");
-                          });
+    safari.extension.dispatchMessage("docLoaded");
+});
 
 // Listens for messages sent from the app extension's Swift code.
 safari.self.addEventListener("message", handleMessage);
 
 var config = null;
 
-document.addEventListener('click', function (event) {
-                          
-                          var anchor = event.target.closest("a");     // Find closest Anchor (or self)
-                          var scheme = anchor.protocol;
-                          scheme = scheme.replace(":", "");
-                          
-                          if (!shouldHandleLink(scheme)) {
-                          return true;
-                          }
-                          event.preventDefault();
-                          linkClicked(event, anchor.href);
-                          }, true);
+document.addEventListener('click', function(event) {
+
+    var anchor = event.target.closest("a"); // Find closest Anchor (or self)
+	if (anchor == null) return;
+
+	var scheme = anchor.protocol;
+    scheme = scheme.replace(":", "");
+
+    if (!shouldHandleLink(scheme)) {
+        return true;
+    }
+    event.preventDefault();
+    linkClicked(event, anchor.href);
+}, true);
 
 function linkClicked(e, url) {
-    safari.extension.dispatchMessage("handleCustomScheme", {"url": url});
+    safari.extension.dispatchMessage("handleCustomScheme", {
+        "url": url
+    });
 }
 
 function shouldHandleLink(scheme) {
@@ -38,5 +42,3 @@ function handleMessage(event) {
             break;
     }
 }
-
-
