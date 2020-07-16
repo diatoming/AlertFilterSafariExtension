@@ -3,7 +3,8 @@ Safari App Extension to filter out "Do you want to allow this page to open ..." 
 
 Please check this blog for the situation described:
 
-https://www.diatoming.com/blog/a-workaround-to-get-rid-of-the-annoying-alert-in-safari-11/
+https://dintapps.com/articles/a-workaround-to-get-rid-of-the-annoying-alert-in-safari-11/
+
 
 ## Install
 Please unzip and move AlertFilterSafariExtension.app to folder */Applications* on the Mac.
